@@ -52,3 +52,6 @@ As a user I want the following features on
 ![Alt text](images_readme/thumbnail%20(4).jpeg)
 <strong><hr></strong>
 ERD
+<hr>
+
+![Alt text](images_readme/thumbnail_ERD.jpeg)
