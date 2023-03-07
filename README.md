@@ -37,11 +37,8 @@ As a user I want the following features on
 -the ability to create account
 -sign in and sign up 
 -browse products
--add products to my wishlist 
--add products ot the  Cart 
 -rate the products
-* Review products
-*make a payment  
+* Review products 
 ```
 
 
