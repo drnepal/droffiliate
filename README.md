@@ -21,10 +21,10 @@ Materalize.css
 Backend and Database
 
 ```
-Python
-Django
 Nodejs
-Postgresql
+Express
+MongoDb
+Mongoose
 Authentication and Authorization
 
 ```
@@ -53,5 +53,5 @@ As a user I want the following features on
 ![Alt text](images_readme/thumbnail%20(3).jpeg)
 
 ![Alt text](images_readme/thumbnail%20(4).jpeg)
-
-![Alt text](images_readme/table-relationships-ecommerce-database.png)
+<strong><hr></strong>
+ERD
