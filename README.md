@@ -2,7 +2,7 @@
 
 
 <h4>
-This Project is about the final project at General Assembly 12-12.The project is about the drop shipping where online seller does not require to have an  inventory ( which I failed while trying with shopify 2 yrs ago). And Also My  desire owning a affiliate  website 15 yrs ago which I learnt to built through google blog  and  tried to monetize through  google adsense while working at an Interne Service Provider Company.
+This Project is about the final project at General Assembly 12-12.The project is about the drop shipping where online seller does not require to have an  inventory. And Also This website deserves to make money through affiliate marketing.
 </h4>
 <hr>
 
