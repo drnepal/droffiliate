@@ -2,7 +2,6 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import Product from './Product'
 import products from '../components/products'
-import Rating from '../components/Rating'
 
 const Home = () => {
   return (
