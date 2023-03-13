@@ -2,7 +2,7 @@
 import React, { useState, Fragment } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { v4 as uuid } from 'uuid'
-import { Container } from 'react-bootstrap'
+
 
 // import AuthenticatedRoute from './components/shared/AuthenticatedRoute'
 import AutoDismissAlert from './components/shared/AutoDismissAlert/AutoDismissAlert'
@@ -10,15 +10,18 @@ import Header from './components/shared/Header'
 import Footer from './components/shared/Footer'
 import RequireAuth from './components/shared/RequireAuth'
 import Home from './components/Pages/Home'
-import ShowProduct from './components/Pages/ShowProduct'
+
+import SingleProduct from './components/Pages/SingleProduct'
+
 import SignUp from './components/auth/SignUp'
 import SignIn from './components/auth/SignIn'
 import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
 
+
 const App = () => {
 
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState()
   const [msgAlerts, setMsgAlerts] = useState([])
 
   console.log('user in app', user)
@@ -49,12 +52,19 @@ const App = () => {
 			
 				<Footer />
 				<Routes>
+
+				
+
 			
-                    <Route path='/product/:id' component={ShowProduct} />
+            
 					<Route path='/' element={<Home msgAlert={msgAlert} user={user} />} />
+					{/* <Route path="/product/:id" element={<SingleProduct />} /> */}
+
+
 					<Route
 						path='/sign-up'
 						element={<SignUp msgAlert={msgAlert} setUser={setUser} />}
+						
 					/>
 					<Route
 						path='/sign-in'
