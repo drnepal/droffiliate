@@ -60,7 +60,7 @@ const SignIn = (props) => {
                 <h3>Sign In</h3>
                 <Form onSubmit={onSignIn}>
                     <Form.Group controlId='email'>
-                        <Form.Label>Email address</Form.Label>
+                        <Form.Label>User Name</Form.Label>
                         <Form.Control
                             required
                             type='email'

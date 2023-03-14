@@ -58,7 +58,7 @@ const App = () => {
 			
             
 					<Route path='/' element={<Home msgAlert={msgAlert} user={user} />} />
-					{/* <Route path="/product/:id" element={<SingleProduct />} /> */}
+					<Route path="/product/:id" element={<SingleProduct />} />
 
 
 					<Route

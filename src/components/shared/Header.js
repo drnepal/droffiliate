@@ -8,12 +8,12 @@ const linkStyle = {
 }
 const authenticatedOptions = (
 	<>
-		<Nav.Item>
+		<Nav.Item className='m-2'>
 			<Link to='change-password' style={linkStyle}>
 				Change Password
 			</Link>
 		</Nav.Item>
-		<Nav.Item>
+		<Nav.Item className='m-2'>
 			<Link to='sign-out' style={linkStyle}>
 				Sign Out
 			</Link>
@@ -23,38 +23,37 @@ const authenticatedOptions = (
 
 const unauthenticatedOptions = (
 	<>
-        <Nav.Item className="m-2">
-            <Link to='sign-up' style={linkStyle}>Sign Up</Link>
+        <Nav.Item className='m-2'>
+		    <Link to='sign-up' style={linkStyle}>Sign Up</Link>
         </Nav.Item>
-        <Nav.Item className="m-2">
-            <Link to='sign-in' style={linkStyle}>Sign In</Link>
+        <Nav.Item className='m-2'>
+		    <Link to='sign-in' style={linkStyle}>Sign In</Link>
         </Nav.Item>
 	</>
 )
-  
 
 const alwaysOptions = (
 	<>
-		<Nav.Link>
+		<Nav.Item className='m-2'>
 			<Link to='/' style={linkStyle}>
 				Home
 			</Link>
-		</Nav.Link>
+		</Nav.Item>
 	</>
 )
 
 const Header = ({ user }) => (
-	<Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
-		<Navbar.Brand>
+	<Navbar bg='dark' variant='dark' expand='md'>
+		<Navbar.Brand className="m-2">
             <Link to='/' style={linkStyle}>
-                MyShop
+             MyShop
             </Link>
         </Navbar.Brand>
 		<Navbar.Toggle aria-controls='basic-navbar-nav' />
 		<Navbar.Collapse id='basic-navbar-nav'>
-			<Nav className='ml-left'>
+			<Nav className='ml-auto'>
 				{user && (
-					<span className='navbar-text mr-2'>Welcome, {user.email}</span>
+					<span className='navbar-text mr-2'>Welcome {user.email}</span>
 				)}
 				{alwaysOptions}
 				{user ? authenticatedOptions : unauthenticatedOptions}
